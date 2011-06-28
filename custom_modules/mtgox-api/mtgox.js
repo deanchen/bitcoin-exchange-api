@@ -10,7 +10,7 @@ var mtgox = exports;
 
 /** public data **/
 mtgox.trades = function() {
-	return restler.get(API + 'data/ticker.php');
+	return restler.get(API + 'data/getTrades.php');
 }
 
 mtgox.book = function() {
@@ -18,5 +18,5 @@ mtgox.book = function() {
 }
 
 mtgox.ticker = function() {
-	return restler.get(API + 'getTrades.php');
+	return restler.get(API + 'data/ticker.php');
 }

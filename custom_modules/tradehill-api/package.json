@@ -1,7 +1,7 @@
 {
 	"name": "tradehill-api",
 	"version": "0.0.1",
-	"main": "tradehill-api"
+	"main": "tradehill",
 	"dependencies": {
 		"restler" : ""
 	}
