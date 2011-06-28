@@ -12,7 +12,7 @@ var tradehill = exports;
 /** public data **/
 tradehill.trades = function(callback) {
 	return rest.get(API + 'Trades', {
-		parsar: parsers.json
+		parser: rest.parsers.json
 	}).on('complete', function(data) {
 		callback(null, data);
 	});
@@ -20,7 +20,7 @@ tradehill.trades = function(callback) {
 
 tradehill.book = function(callback) {
 	return rest.get(API + 'Orderbook', {
-		parsar: parsers.json
+		parser: rest.parsers.json
 	}).on('complete', function(data) {
 		callback(null, data);
 	});
