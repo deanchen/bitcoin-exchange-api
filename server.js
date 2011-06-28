@@ -9,13 +9,12 @@ exchanges.init({
 	"tradehill" : tradehill
 });
 
-exchanges.ticker('mtgox').on('complete', function(data) {
+exchanges.ticker('mtgox', function(err, data) {
 	console.log('mtgox ticker data');
-	console.log(data.ticker);
+	console.log(data);
 });
 
-exchanges.ticker('tradehill').on('complete', function(data) {
+exchanges.ticker('tradehill', function(err, data) {
 	console.log('tradehill ticker data');
-	console.log(data)
-	console.log(data['ticker']);
+	console.log(data);
 });
