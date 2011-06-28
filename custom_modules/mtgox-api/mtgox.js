@@ -9,14 +9,23 @@ var mtgox = exports;
 /*** define module functions ***/
 
 /** public data **/
-mtgox.trades = function() {
-	return restler.get(API + 'data/getTrades.php');
+mtgox.trades = function(callback) {
+	restler.get(API + 'data/getTrades.php').on
+	('complete', function(data){
+		callback(null, data);
+	});
 }
 
-mtgox.book = function() {
-	return restler.get(API + 'data/getDepth.php');
+mtgox.book = function(callback) {
+	restler.get(API + 'data/getDepth.php').on
+	('complete', function(data){
+		callback(null, data);
+	});
 }
 
-mtgox.ticker = function() {
-	return restler.get(API + 'data/ticker.php');
+mtgox.ticker = function(callback) {
+	restler.get(API + 'data/ticker.php').on
+	('complete', function(data){
+		callback(null, data.ticker);
+	});
 }
