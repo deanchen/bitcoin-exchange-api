@@ -1,0 +1,11 @@
+{
+	"name": "bitcoin-exchange-api",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:deanchen/bitcoin-exchange-api.git"
+	},
+	"dependencies": {
+		"restler" : ""
+	}
+}
