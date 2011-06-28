@@ -23,7 +23,6 @@ tradehill.book = function() {
 }
 
 tradehill.ticker = function() {
-	console.log(rest.parsers.json)
 	return rest.get(API + 'Ticker', {
 		parser: rest.parsers.json
 	});
