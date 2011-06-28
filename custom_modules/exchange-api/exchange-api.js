@@ -19,3 +19,12 @@ exchanges.book = function(exchange, callback) {
 exchanges.ticker = function(exchange, callback) {
 	_exchangeMap[exchange].ticker(callback);
 }
+
+
+exchanges.balance = function(exchange, callback) {
+	_exchangeMap[exchange].balance(callback);
+}
+
+exchanges.orders = function(exchange, type, callback) {
+	_exchangeMap[exchange].orders(type, callback);
+}

@@ -15,3 +15,12 @@ exchanges.ticker('mtgox', function(err, data) {
 	console.log('mtgox ticker fetched');
 	console.log(data);
 });
+
+exchanges.balance('mtgox', function(err, data) {
+	console.log(data);
+})
+
+var type = 'sell';
+exchanges.orders('mtgox', type, function(err, data) {
+	console.log(data);
+})
