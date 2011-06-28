@@ -1,0 +1,9 @@
+{
+	"name": "exchange-api",
+	"version": "0.0.1",
+	"main": "exchange-api",
+	"dependencies": {
+		"mtgox-api" : "",
+		"tradehill-api" : ""
+	}
+}
