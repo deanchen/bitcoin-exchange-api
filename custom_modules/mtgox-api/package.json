@@ -1,0 +1,8 @@
+{
+	"name": "mtgox-api",
+	"version": "0.0.1",
+	"main": "mtgox-api",
+	"dependencies": {
+		"restler" : ""
+	}
+}
