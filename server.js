@@ -11,8 +11,10 @@ exchanges.init({
 });
 
 // see custom_modules/exchange-api/test/text-exchange-api.js for full function usage examples
-var amount = 0.001;
-var price = 1;
-exchanges.balance('mtgox', function(err, data) {
+var amount = 0.01;
+var price = 100;
+
+exchanges.sell('tradehill', amount, price, function(err, data) {
 	console.log(data)
 });
+
