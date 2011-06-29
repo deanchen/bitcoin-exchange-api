@@ -11,16 +11,8 @@ exchanges.init({
 });
 
 // see custom_modules/exchange-api/test/text-exchange-api.js for full function usage examples
-exchanges.ticker('mtgox', function(err, data) {
-	console.log('mtgox ticker fetched');
-	console.log(data);
-});
-
+var amount = 0.001;
+var price = 1;
 exchanges.balance('mtgox', function(err, data) {
-	console.log(data);
-})
-
-var type = 'sell';
-exchanges.orders('mtgox', type, function(err, data) {
-	console.log(data);
-})
+	console.log(data)
+});
